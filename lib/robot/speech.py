@@ -67,7 +67,7 @@ class Speech(Sayable):
         sys.exit()
 
     def hello(self) -> None:
-        self._translate('Hello, my master! How the things are going, my master?')
+        self._translate('Hello, my master! How the things are going dude?')
 
     def things_going(self) -> None:
         self._translate("I\'m doing just awesome, how the gorgeous day isn\'t it?")

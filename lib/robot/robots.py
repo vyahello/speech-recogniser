@@ -56,7 +56,10 @@ class JackRobot(Robot):
         self._say.joke()
 
     def say_summary(self) -> None:
-        self._say.summary(name=self.__class__.__name__, age='with immortal')
+        self._say.summary(
+            name=self.__class__.__name__,
+            age='with immortal'
+        )
 
     def say_unknown(self) -> None:
         self._say.unknown()
