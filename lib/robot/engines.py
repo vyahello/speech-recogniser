@@ -19,7 +19,7 @@ class Engine(ABC):
 class SpeechEngine(Engine):
     """Represent robot speech engine."""
 
-    def __init__(self, engine_name: str = 'default engine') -> None:
+    def __init__(self, engine_name: str = 'Default engine') -> None:
         self._name: str = engine_name
 
     def translate_speech(self, speech: str) -> int:

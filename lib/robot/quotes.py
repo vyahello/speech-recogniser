@@ -47,3 +47,19 @@ class JokeQuote(Quote):
     @classmethod
     def choose_random(cls) -> str:
         return choice(cls._jokes)
+
+
+class Quotes:
+    """Represent a bunch of quotes."""
+
+    def __init__(self) -> None:
+        self._cheer_up: Quote = CheerUpQuote
+        self._joke: Quote = JokeQuote
+
+    def cheer_up(self) -> Quote:
+        """Return cheer up quotes."""
+        return self._cheer_up
+
+    def joke(self) -> Quote:
+        """Return joke quotes."""
+        return self._joke
