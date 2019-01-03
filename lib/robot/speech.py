@@ -57,7 +57,8 @@ class Speech(Sayable):
         self._translate(self._quotes.joke().choose_random())
 
     def summary(self, name: str, age: str) -> None:
-        self._translate(f"My name is {name} and i'm {age} age, I was born to help you with your day to day things")
+        self._translate(f"My name is {name} and Im {age} age, "
+                        f"I was born to help you with your day to day things. How can I help you, my master")
 
     def unknown(self) -> None:
         self._translate("I do not understand what you are talking about. Please say it one more time!")

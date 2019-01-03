@@ -1,5 +1,11 @@
 # Speech recognition
-Speech recognition program written in python.
+Speech recognition program written in python. Just run a program and start talk with a Jack, it is fun I promise you!
+
+# Run a program
+Run script from the root directory of the project:
+```bash
+python recognise_speech.py
+```
 
 ## Contributing
 - clone the repository

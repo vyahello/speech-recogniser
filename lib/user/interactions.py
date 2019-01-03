@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 from typing import Any
-from speech_recognition import Microphone, Recognizer, AudioData, UnknownValueError
+from speech_recognition import Microphone, Recognizer, AudioData
 
 
 class AudioSource(ABC):
@@ -15,11 +15,6 @@ class AudioSource(ABC):
     def __exit__(self, exc_type, exc_val, exc_tb) -> None:
         """Exit audio manager."""
         pass
-
-
-class AudioSourceError(UnknownValueError):
-    """Audio source error."""
-    pass
 
 
 class UserAudioSource(AudioSource):
@@ -55,7 +50,7 @@ class RecognizerOfAudioSource(AudioSource):
     @pause.setter
     def pause(self, seconds: int) -> None:
         if not isinstance(seconds, int):
-            raise TypeError('Seconds should be int data type.')
+            raise TypeError('Seconds should be <int> data type.')
 
     def configure_noise(self, source: Microphone, duration: int = 1) -> None:
         self._recogniser.adjust_for_ambient_noise(source, duration)

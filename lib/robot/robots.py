@@ -19,7 +19,7 @@ class Robot(ABC):
 
     @abstractmethod
     def say_summary(self) -> None:
-        """Compose a say_summary about a robot."""
+        """Compose a summary about a robot."""
         pass
 
     @abstractmethod
@@ -57,7 +57,7 @@ class JackRobot(Robot):
 
     def say_summary(self) -> None:
         self._say.summary(
-            name=self.__class__.__name__,
+            name='Jack',
             age='with immortal'
         )
 
