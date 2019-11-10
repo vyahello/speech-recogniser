@@ -1,5 +1,5 @@
 # Speech recognition
-Speech recognition program written in python. Just run a program and start talk with a Jack, it is fun I promise you!
+Speech recognition program written in python. Just run a program and start talk with a robot named **Jack**. It is fun I promise you, have a fun!
 
 # Run a program
 Run script from the root directory of the project:
